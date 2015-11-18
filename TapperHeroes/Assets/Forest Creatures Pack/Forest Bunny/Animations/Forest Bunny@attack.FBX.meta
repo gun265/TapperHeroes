@@ -1,0 +1,117 @@
+fileFormatVersion: 2
+guid: 2cc81d0da6e27d649b3f572dbdc3c8b0
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Forest Bunny
+    100002: //RootNode
+    100004: Rig
+    100006: RigHead
+    100008: RigHeadGizmo
+    100010: RigLEar01
+    100012: RigLEar01Gizmo
+    100014: RigLEar02
+    100016: RigLEar02Gizmo
+    100018: RigLEar03
+    100020: RigLEar03Gizmo
+    100022: RigNeck1
+    100024: RigNeck2
+    100026: RigNose
+    100028: RigNoseGizmo
+    100030: RigPelvis
+    100032: RigPelvisGizmo
+    100034: RigREar01
+    100036: RigREar01Gizmo
+    100038: RigREar02
+    100040: RigREar02Gizmo
+    100042: RigREar03
+    100044: RigREar03Gizmo
+    100046: RigTail1
+    100048: RigTail1Gizmo
+    400000: Forest Bunny
+    400002: //RootNode
+    400004: Rig
+    400006: RigHead
+    400008: RigHeadGizmo
+    400010: RigLEar01
+    400012: RigLEar01Gizmo
+    400014: RigLEar02
+    400016: RigLEar02Gizmo
+    400018: RigLEar03
+    400020: RigLEar03Gizmo
+    400022: RigNeck1
+    400024: RigNeck2
+    400026: RigNose
+    400028: RigNoseGizmo
+    400030: RigPelvis
+    400032: RigPelvisGizmo
+    400034: RigREar01
+    400036: RigREar01Gizmo
+    400038: RigREar02
+    400040: RigREar02Gizmo
+    400042: RigREar03
+    400044: RigREar03Gizmo
+    400046: RigTail1
+    400048: RigTail1Gizmo
+    4300000: Forest Bunny
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Forest Bunny
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

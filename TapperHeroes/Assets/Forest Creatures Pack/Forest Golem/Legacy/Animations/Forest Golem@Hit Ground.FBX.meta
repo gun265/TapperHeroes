@@ -1,0 +1,210 @@
+fileFormatVersion: 2
+guid: 0f5fa3cb82a3fa440bc7d20f1e6519e1
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Forest Golem
+    100002: //RootNode
+    100004: Rig
+    100006: RigHead
+    100008: RigHeadGizmo
+    100010: RigLArm1
+    100012: RigLArm1Gizmo
+    100014: RigLArm2
+    100016: RigLArm2Gizmo
+    100018: RigLArmCollarbone
+    100020: RigLArmPalm
+    100022: RigLArmPalmGizmo
+    100024: RigLArmPoint1
+    100026: RigLArmPoint1Gizmo
+    100028: RigLArmPoint2
+    100030: RigLArmPoint2Gizmo
+    100032: RigLArmPoint3
+    100034: RigLArmPoint3Gizmo
+    100036: RigLArmRest1
+    100038: RigLArmRest1Gizmo
+    100040: RigLArmRest2
+    100042: RigLArmRest2Gizmo
+    100044: RigLArmRest3
+    100046: RigLArmRest3Gizmo
+    100048: RigLArmThumb1
+    100050: RigLArmThumb1Gizmo
+    100052: RigLArmThumb2
+    100054: RigLArmThumb2Gizmo
+    100056: RigLLeg1
+    100058: RigLLeg2
+    100060: RigLLegAnkle
+    100062: RigLLegFoot1
+    100064: RigLLegPlatform
+    100066: RigNeck
+    100068: RigPelvis
+    100070: RigPelvisGizmo
+    100072: RigRArm1
+    100074: RigRArm1Gizmo
+    100076: RigRArm2
+    100078: RigRArm2Gizmo
+    100080: RigRArmCollarbone
+    100082: RigRArmPalm
+    100084: RigRArmPalmGizmo
+    100086: RigRArmPoint1
+    100088: RigRArmPoint1Gizmo
+    100090: RigRArmPoint2
+    100092: RigRArmPoint2Gizmo
+    100094: RigRArmPoint3
+    100096: RigRArmPoint3Gizmo
+    100098: RigRArmRest1
+    100100: RigRArmRest1Gizmo
+    100102: RigRArmRest2
+    100104: RigRArmRest2Gizmo
+    100106: RigRArmRest3
+    100108: RigRArmRest3Gizmo
+    100110: RigRArmThumb1
+    100112: RigRArmThumb1Gizmo
+    100114: RigRArmThumb2
+    100116: RigRArmThumb2Gizmo
+    100118: RigRibcage
+    100120: RigRibcageGizmo
+    100122: RigRLeg1
+    100124: RigRLeg2
+    100126: RigRLegAnkle
+    100128: RigRLegFoot1
+    100130: RigRLegPlatform
+    100132: RigSpine1
+    100134: RigSpine2
+    100136: RigSpine3
+    100138: RigSpine4
+    100140: RigSpine5
+    400000: Forest Golem
+    400002: //RootNode
+    400004: Rig
+    400006: RigHead
+    400008: RigHeadGizmo
+    400010: RigLArm1
+    400012: RigLArm1Gizmo
+    400014: RigLArm2
+    400016: RigLArm2Gizmo
+    400018: RigLArmCollarbone
+    400020: RigLArmPalm
+    400022: RigLArmPalmGizmo
+    400024: RigLArmPoint1
+    400026: RigLArmPoint1Gizmo
+    400028: RigLArmPoint2
+    400030: RigLArmPoint2Gizmo
+    400032: RigLArmPoint3
+    400034: RigLArmPoint3Gizmo
+    400036: RigLArmRest1
+    400038: RigLArmRest1Gizmo
+    400040: RigLArmRest2
+    400042: RigLArmRest2Gizmo
+    400044: RigLArmRest3
+    400046: RigLArmRest3Gizmo
+    400048: RigLArmThumb1
+    400050: RigLArmThumb1Gizmo
+    400052: RigLArmThumb2
+    400054: RigLArmThumb2Gizmo
+    400056: RigLLeg1
+    400058: RigLLeg2
+    400060: RigLLegAnkle
+    400062: RigLLegFoot1
+    400064: RigLLegPlatform
+    400066: RigNeck
+    400068: RigPelvis
+    400070: RigPelvisGizmo
+    400072: RigRArm1
+    400074: RigRArm1Gizmo
+    400076: RigRArm2
+    400078: RigRArm2Gizmo
+    400080: RigRArmCollarbone
+    400082: RigRArmPalm
+    400084: RigRArmPalmGizmo
+    400086: RigRArmPoint1
+    400088: RigRArmPoint1Gizmo
+    400090: RigRArmPoint2
+    400092: RigRArmPoint2Gizmo
+    400094: RigRArmPoint3
+    400096: RigRArmPoint3Gizmo
+    400098: RigRArmRest1
+    400100: RigRArmRest1Gizmo
+    400102: RigRArmRest2
+    400104: RigRArmRest2Gizmo
+    400106: RigRArmRest3
+    400108: RigRArmRest3Gizmo
+    400110: RigRArmThumb1
+    400112: RigRArmThumb1Gizmo
+    400114: RigRArmThumb2
+    400116: RigRArmThumb2Gizmo
+    400118: RigRibcage
+    400120: RigRibcageGizmo
+    400122: RigRLeg1
+    400124: RigRLeg2
+    400126: RigRLegAnkle
+    400128: RigRLegFoot1
+    400130: RigRLegPlatform
+    400132: RigSpine1
+    400134: RigSpine2
+    400136: RigSpine3
+    400138: RigSpine4
+    400140: RigSpine5
+    4300000: Forest Golem
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Forest Golem
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

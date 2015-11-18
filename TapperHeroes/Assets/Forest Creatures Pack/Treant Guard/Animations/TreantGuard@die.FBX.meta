@@ -1,0 +1,168 @@
+fileFormatVersion: 2
+guid: ccf59be16ee034e4496436b1695d3b33
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: DummyWeapon
+    100002: Mace
+    100004: Rig
+    100006: RigHead
+    100008: RigHeadGizmo
+    100010: RigLArm1
+    100012: RigLArm1Gizmo
+    100014: RigLArm2
+    100016: RigLArm2Gizmo
+    100018: RigLArmCollarbone
+    100020: RigLArmDigit11
+    100022: RigLArmDigit11Gizmo
+    100024: RigLArmDigit12
+    100026: RigLArmDigit12Gizmo
+    100028: RigLArmPalm
+    100030: RigLArmPalmGizmo
+    100032: RigLLeg1
+    100034: RigLLeg2
+    100036: RigLLegAnkle
+    100038: RigLLegfoot1
+    100040: RigLLegPlatform
+    100042: RigMouth
+    100044: RigMouthGizmo
+    100046: RigNeck
+    100048: RigPelvis
+    100050: RigPelvisGizmo
+    100052: RigRArm1
+    100054: RigRArm1Gizmo
+    100056: RigRArm2
+    100058: RigRArm2Gizmo
+    100060: RigRArmCollarbone
+    100062: RigRArmDigit11
+    100064: RigRArmDigit11Gizmo
+    100066: RigRArmDigit12
+    100068: RigRArmDigit12Gizmo
+    100070: RigRArmPalm
+    100072: RigRArmPalmGizmo
+    100074: RigRibcage
+    100076: RigRibcageGizmo
+    100078: RigRLeg1
+    100080: RigRLeg2
+    100082: RigRLegAnkle
+    100084: RigRLegfoot1
+    100086: RigRLegPlatform
+    100088: RigSpine1
+    100090: RigSpine2
+    100092: RigSpine3
+    100094: TreantGuard
+    100096: //RootNode
+    400000: DummyWeapon
+    400002: Mace
+    400004: Rig
+    400006: RigHead
+    400008: RigHeadGizmo
+    400010: RigLArm1
+    400012: RigLArm1Gizmo
+    400014: RigLArm2
+    400016: RigLArm2Gizmo
+    400018: RigLArmCollarbone
+    400020: RigLArmDigit11
+    400022: RigLArmDigit11Gizmo
+    400024: RigLArmDigit12
+    400026: RigLArmDigit12Gizmo
+    400028: RigLArmPalm
+    400030: RigLArmPalmGizmo
+    400032: RigLLeg1
+    400034: RigLLeg2
+    400036: RigLLegAnkle
+    400038: RigLLegfoot1
+    400040: RigLLegPlatform
+    400042: RigMouth
+    400044: RigMouthGizmo
+    400046: RigNeck
+    400048: RigPelvis
+    400050: RigPelvisGizmo
+    400052: RigRArm1
+    400054: RigRArm1Gizmo
+    400056: RigRArm2
+    400058: RigRArm2Gizmo
+    400060: RigRArmCollarbone
+    400062: RigRArmDigit11
+    400064: RigRArmDigit11Gizmo
+    400066: RigRArmDigit12
+    400068: RigRArmDigit12Gizmo
+    400070: RigRArmPalm
+    400072: RigRArmPalmGizmo
+    400074: RigRibcage
+    400076: RigRibcageGizmo
+    400078: RigRLeg1
+    400080: RigRLeg2
+    400082: RigRLegAnkle
+    400084: RigRLegfoot1
+    400086: RigRLegPlatform
+    400088: RigSpine1
+    400090: RigSpine2
+    400092: RigSpine3
+    400094: TreantGuard
+    400096: //RootNode
+    2300000: Mace
+    3300000: Mace
+    4300000: TreantGuard
+    4300002: Mace
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: TreantGuard
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

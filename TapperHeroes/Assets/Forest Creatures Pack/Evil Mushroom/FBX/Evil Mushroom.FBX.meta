@@ -1,0 +1,148 @@
+fileFormatVersion: 2
+guid: 210131566c38d64499789fe20d93cd58
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Evil Mushroom
+    100004: Rig
+    100006: RigHead
+    100008: RigHeadGizmo
+    100010: RigLArm1
+    100012: RigLArm1Gizmo
+    100014: RigLArm2
+    100016: RigLArm2Gizmo
+    100018: RigLArmCollarbone
+    100020: RigLArmDigit11
+    100022: RigLArmDigit12
+    100024: RigLArmPalm
+    100026: RigLArmPalmGizmo
+    100028: RigLLeg1
+    100030: RigLLeg2
+    100032: RigLLegAnkle
+    100034: RigLLegPlatform
+    100036: RigMouth
+    100038: RigMouthGizmo
+    100040: RigNeck
+    100042: RigPelvis
+    100044: RigPelvisGizmo
+    100046: RigRArm1
+    100048: RigRArm1Gizmo
+    100050: RigRArm2
+    100052: RigRArm2Gizmo
+    100054: RigRArmCollarbone
+    100056: RigRArmDigit11
+    100058: RigRArmDigit12
+    100060: RigRArmPalm
+    100062: RigRArmPalmGizmo
+    100064: RigRibcage
+    100066: RigRibcageGizmo
+    100068: RigRLeg1
+    100070: RigRLeg2
+    100072: RigRLegAnkle
+    100074: RigRLegPlatform
+    100076: RigSpineLow
+    100078: RigSpineUp
+    400000: //RootNode
+    400002: Evil Mushroom
+    400004: Rig
+    400006: RigHead
+    400008: RigHeadGizmo
+    400010: RigLArm1
+    400012: RigLArm1Gizmo
+    400014: RigLArm2
+    400016: RigLArm2Gizmo
+    400018: RigLArmCollarbone
+    400020: RigLArmDigit11
+    400022: RigLArmDigit12
+    400024: RigLArmPalm
+    400026: RigLArmPalmGizmo
+    400028: RigLLeg1
+    400030: RigLLeg2
+    400032: RigLLegAnkle
+    400034: RigLLegPlatform
+    400036: RigMouth
+    400038: RigMouthGizmo
+    400040: RigNeck
+    400042: RigPelvis
+    400044: RigPelvisGizmo
+    400046: RigRArm1
+    400048: RigRArm1Gizmo
+    400050: RigRArm2
+    400052: RigRArm2Gizmo
+    400054: RigRArmCollarbone
+    400056: RigRArmDigit11
+    400058: RigRArmDigit12
+    400060: RigRArmPalm
+    400062: RigRArmPalmGizmo
+    400064: RigRibcage
+    400066: RigRibcageGizmo
+    400068: RigRLeg1
+    400070: RigRLeg2
+    400072: RigRLegAnkle
+    400074: RigRLegPlatform
+    400076: RigSpineLow
+    400078: RigSpineUp
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Evil Mushroom
+    9500000: //RootNode
+    13700000: Evil Mushroom
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

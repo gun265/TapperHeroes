@@ -1,0 +1,148 @@
+fileFormatVersion: 2
+guid: e353e2e8c6f6a4c45b47b0dd60a79d2c
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Mini Devil
+    100004: Rig
+    100006: RigHead
+    100008: RigHeadGizmo
+    100010: RigLArm1
+    100012: RigLArm1Gizmo
+    100014: RigLArm2
+    100016: RigLArm2Gizmo
+    100018: RigPelvis
+    100020: RigPelvisGizmo
+    100022: RigRArm1
+    100024: RigRArm1Gizmo
+    100026: RigRArm2
+    100028: RigRArm2Gizmo
+    100030: RigSpine1
+    100032: RigSpine2
+    100034: RigTail1
+    100036: RigTail1Gizmo
+    100038: RigTail2
+    100040: RigTail2Gizmo
+    100042: RigTail3
+    100044: RigTail3Gizmo
+    100046: RigTail4
+    100048: RigTail4Gizmo
+    100050: RigTail5
+    100052: RigTail5Gizmo
+    400000: //RootNode
+    400002: Mini Devil
+    400004: Rig
+    400006: RigHead
+    400008: RigHeadGizmo
+    400010: RigLArm1
+    400012: RigLArm1Gizmo
+    400014: RigLArm2
+    400016: RigLArm2Gizmo
+    400018: RigPelvis
+    400020: RigPelvisGizmo
+    400022: RigRArm1
+    400024: RigRArm1Gizmo
+    400026: RigRArm2
+    400028: RigRArm2Gizmo
+    400030: RigSpine1
+    400032: RigSpine2
+    400034: RigTail1
+    400036: RigTail1Gizmo
+    400038: RigTail2
+    400040: RigTail2Gizmo
+    400042: RigTail3
+    400044: RigTail3Gizmo
+    400046: RigTail4
+    400048: RigTail4Gizmo
+    400050: RigTail5
+    400052: RigTail5Gizmo
+    4300000: Mini Devil
+    7400000: flyforward
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Mini Devil
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: flyforward
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

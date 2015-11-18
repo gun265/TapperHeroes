@@ -1,0 +1,225 @@
+fileFormatVersion: 2
+guid: cb7f8af989071c344922efdbc01143c1
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Dagger
+    100002: //RootNode
+    100004: Treasure Globin
+    100006: DummyWeapon
+    100008: Rig
+    100010: RigBag
+    100012: RigBagGizmo
+    100014: RigHead
+    100016: RigHeadGizmo
+    100018: RigLArmForearm
+    100020: RigLArmIndex1
+    100022: RigLArmIndex2
+    100024: RigLArmIndex3
+    100026: RigLArmLast1
+    100028: RigLArmLast2
+    100030: RigLArmLast3
+    100032: RigLArmMiddle1
+    100034: RigLArmMiddle2
+    100036: RigLArmMiddle3
+    100038: RigLArmPalm
+    100040: RigLArmThumb1
+    100042: RigLArmThumb2
+    100044: RigLArmUpperarm
+    100046: RigLEar01
+    100048: RigLEar01Gizmo
+    100050: RigLEar02
+    100052: RigLEar02Gizmo
+    100054: RigLForearmGizmo
+    100056: RigLLegCalf
+    100058: RigLLegFoot
+    100060: RigLLegPlatform
+    100062: RigLLegThigh
+    100064: RigLLegToes1
+    100066: RigLPalmGizmo
+    100068: RigLUpperarmGizmo
+    100070: RigNeck1
+    100072: RigNeck2
+    100074: RigPelvis
+    100076: RigPelvisGizmo
+    100078: RigRArmForearm
+    100080: RigRArmForearmGizmo
+    100082: RigRArmIndex1
+    100084: RigRArmIndex2
+    100086: RigRArmIndex3
+    100088: RigRArmLast1
+    100090: RigRArmLast2
+    100092: RigRArmLast3
+    100094: RigRArmMiddle1
+    100096: RigRArmMiddle2
+    100098: RigRArmMiddle3
+    100100: RigRArmPalm
+    100102: RigRArmPalmGizmo
+    100104: RigRArmThumb1
+    100106: RigRArmThumb2
+    100108: RigRArmUpperarm
+    100110: RigRArmUpperarmGizmo
+    100112: RigREar01
+    100114: RigREar01Gizmo
+    100116: RigREar02
+    100118: RigREar02Gizmo
+    100120: RigRibcage
+    100122: RigRibcageGizmo
+    100124: RigRLegCalf
+    100126: RigRLegFoot
+    100128: RigRLegPlatform
+    100130: RigRLegThigh
+    100132: RigRLegToes1
+    100134: RigRope01
+    100136: RigRope01Gizmo
+    100138: RigRope02
+    100140: RigRope02Gizmo
+    100142: RigRope03
+    100144: RigRope03Gizmo
+    100146: RigSpine1
+    100148: RigSpine2
+    100150: RigSpine3
+    100152: RigSpine4
+    400000: Dagger
+    400002: //RootNode
+    400004: Treasure Globin
+    400006: DummyWeapon
+    400008: Rig
+    400010: RigBag
+    400012: RigBagGizmo
+    400014: RigHead
+    400016: RigHeadGizmo
+    400018: RigLArmForearm
+    400020: RigLArmIndex1
+    400022: RigLArmIndex2
+    400024: RigLArmIndex3
+    400026: RigLArmLast1
+    400028: RigLArmLast2
+    400030: RigLArmLast3
+    400032: RigLArmMiddle1
+    400034: RigLArmMiddle2
+    400036: RigLArmMiddle3
+    400038: RigLArmPalm
+    400040: RigLArmThumb1
+    400042: RigLArmThumb2
+    400044: RigLArmUpperarm
+    400046: RigLEar01
+    400048: RigLEar01Gizmo
+    400050: RigLEar02
+    400052: RigLEar02Gizmo
+    400054: RigLForearmGizmo
+    400056: RigLLegCalf
+    400058: RigLLegFoot
+    400060: RigLLegPlatform
+    400062: RigLLegThigh
+    400064: RigLLegToes1
+    400066: RigLPalmGizmo
+    400068: RigLUpperarmGizmo
+    400070: RigNeck1
+    400072: RigNeck2
+    400074: RigPelvis
+    400076: RigPelvisGizmo
+    400078: RigRArmForearm
+    400080: RigRArmForearmGizmo
+    400082: RigRArmIndex1
+    400084: RigRArmIndex2
+    400086: RigRArmIndex3
+    400088: RigRArmLast1
+    400090: RigRArmLast2
+    400092: RigRArmLast3
+    400094: RigRArmMiddle1
+    400096: RigRArmMiddle2
+    400098: RigRArmMiddle3
+    400100: RigRArmPalm
+    400102: RigRArmPalmGizmo
+    400104: RigRArmThumb1
+    400106: RigRArmThumb2
+    400108: RigRArmUpperarm
+    400110: RigRArmUpperarmGizmo
+    400112: RigREar01
+    400114: RigREar01Gizmo
+    400116: RigREar02
+    400118: RigREar02Gizmo
+    400120: RigRibcage
+    400122: RigRibcageGizmo
+    400124: RigRLegCalf
+    400126: RigRLegFoot
+    400128: RigRLegPlatform
+    400130: RigRLegThigh
+    400132: RigRLegToes1
+    400134: RigRope01
+    400136: RigRope01Gizmo
+    400138: RigRope02
+    400140: RigRope02Gizmo
+    400142: RigRope03
+    400144: RigRope03Gizmo
+    400146: RigSpine1
+    400148: RigSpine2
+    400150: RigSpine3
+    400152: RigSpine4
+    2300000: Dagger
+    2300002: Treasure Globin
+    3300000: Dagger
+    3300002: Treasure Globin
+    4300000: Treasure Globin
+    4300002: Dagger
+    9500000: //RootNode
+    13700000: Treasure Globin
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
