@@ -1400,7 +1400,7 @@ MonoBehaviour:
   CurrentRegenTime: 0
   IsDead: 0
   Ori_Damage: 2
-  Ori_AttackSpeed: 2
+  Ori_AttackSpeed: .5
   Name: hero2
   AttackParticle: {fileID: 100000, guid: c9dd74acda5b68c489519f954e04021c, type: 2}
 --- !u!1 &622091288
