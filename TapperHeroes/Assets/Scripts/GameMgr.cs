@@ -28,7 +28,8 @@ public class GameMgr : MonoBehaviour
     public GameObject Effect = null;
     public GameObject Heroes = null;
     public List<GameObject> TextList = new List<GameObject>();
-    public List<GameObject> EffectList = new List<GameObject>();
+    //public List<GameObject> EffectList = new List<GameObject>();
+    public List<Dictionary<string, object>> AttackList = new List<Dictionary<string, object>>();
     public bool OnDebuging = false;
     public bool IsGamePlaying = true;    
     public uint WeaponLevel = 1;
@@ -97,7 +98,7 @@ public class GameMgr : MonoBehaviour
 
     void Update()
     {
-        UpdateEffect();
+        UpdateEffectList(Time.deltaTime);
     }
 
     public void PlayEffect(Vector3 _Position, string _EffectName)
@@ -106,7 +107,6 @@ public class GameMgr : MonoBehaviour
 
         GameObject Temp = NGUITools.AddChild(Effect, (GameObject)Resources.Load(Path));
         Temp.transform.position = UICamera.currentCamera.ScreenToWorldPoint(_Position);
-        Debug.Log("position x : " + Temp.transform.position.x + ", y : " + Temp.transform.position.y);
     }
 
     void LoadData()
@@ -131,32 +131,34 @@ public class GameMgr : MonoBehaviour
         IsGamePlaying = false;
     }
 
-    public void Attack(uint _Damage, Color _Color)
+    public void Attack(uint _Damage, Color _Color, GameObject _Owner = null)
     {
         uint CurrntDamage = _Damage + (uint)DamageRand;
         bool IsCritical = false;
-        if( Random.Range(0.0f, 100.0f) <= CriticalPercent)
+        if(_Owner == null && Random.Range(0.0f, 100.0f) <= CriticalPercent)
         {
             CurrntDamage = (uint)(CurrntDamage * 2f);
             IsCritical = true;
         }
-
-        DamagePrint(CurrntDamage, IsCritical);
+        DamagePrint(CurrntDamage, IsCritical, _Color);
     }
 
-    void DamagePrint(uint _Damage, bool _IsCritical)
+    void DamagePrint(uint _Damage, bool _IsCritical, Color _Color)
     {
-        Color _FontColor = Color.yellow;
+        int FontSize = 40;
+        float UpSpeed = 0.5f;
         foreach(GameObject _object in TextList)
         {
             if(!_object.active)
             {
                 if(_IsCritical)
                 {
-                    _FontColor = Color.red;
+                    _Color = Color.red;
+                    FontSize = 60;
+                    UpSpeed *= 0.5f;
                 }
                 _object.SetActive(true);
-                _object.GetComponent<DamageText>().Init(_Damage, Monster.position, _FontColor);
+                _object.GetComponent<DamageText>().Init(_Damage, Monster.position, _Color, FontSize, UpSpeed);
                 return;
             }
         }
@@ -171,39 +173,51 @@ public class GameMgr : MonoBehaviour
     {
         CurrentTimer = AttackTimer;
     }
-
-    public void AddAttackEffect(GameObject _EffectPrefab)
+    
+    public void AddAttackList(GameObject _Owner, uint _Damage, float _AttackSpeed, GameObject _AttackEffect)
     {
-        EffectList.Add(_EffectPrefab);
+        Dictionary<string, object> Element = new Dictionary<string, object>();
+        Element.Add("Owner", _Owner);
+        Element.Add("Damage", _Damage);
+        Element.Add("AttackSpeed", _AttackSpeed);
+        Element.Add("AttackEffect", _AttackEffect);
+        AttackList.Add(Element);
     }
 
-    void UpdateEffect()
+    void UpdateEffectList(float _TimeDeltatime)
     {
-        if (EffectList.Count == 0)
+        if( AttackList.Count == 0)
         {
             return;
         }
 
-        // list 대신 dictionary로 바꾸고 sqr거리 판단 true 시 데미지가 뜨도록 수정해야 함
-        for( int i = 0; i < EffectList.Count; i++)
+        for (int i = 0; i < AttackList.Count; i++)
         {
-            if (EffectList[i] == null)
+            if (AttackList[i] == null)
             {
                 return;
             }
-            if (Vector3.SqrMagnitude(MonsterUIPosition - EffectList[i].transform.position) >= 0.0001f)
+            GameObject EffectObject = AttackList[i]["AttackEffect"] as GameObject;
+            Vector3 EffectPos = EffectObject.transform.position;
+            float AttackSpeed = (float)AttackList[i]["AttackSpeed"];
+            uint AttackDamage = (uint)AttackList[i]["Damage"];
+
+            if (Vector3.SqrMagnitude(MonsterUIPosition - EffectPos) >= 0.0001f)
             {
-                Vector3 Normalize = MonsterUIPosition - EffectList[i].transform.position;
+                Vector3 Normalize = MonsterUIPosition - EffectPos;
                 Normalize = Vector3.Normalize(Normalize);
-                EffectList[i].transform.position += Normalize * Time.deltaTime * 0.5f;
+                EffectObject.transform.position += (Normalize * _TimeDeltatime * 0.5f) / AttackSpeed;
             }
             else
             {
-                EffectList[i].SetActive(false);
-                GameObject Temp = EffectList[i];
+                EffectObject.SetActive(false);
+                GameObject Owner = AttackList[i]["Owner"] as GameObject;
+                GameObject Temp = EffectObject;
                 Destroy(Temp);
-                    EffectList.Remove(EffectList[i]);
+                AttackList.Remove(AttackList[i]);
+                Attack(AttackDamage, Color.yellow, Owner);
             }
         }
+
     }
 }

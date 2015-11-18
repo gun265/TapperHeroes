@@ -12,7 +12,7 @@ public class Tapping : MonoBehaviour {
             CanIHit = false;
             Vector3 position = new Vector3(UICamera.lastTouchPosition.x, UICamera.lastTouchPosition.y, 0);
             GameMgr.GetInstance().PlayEffect(position, "Hit");
-            GameMgr.GetInstance().Attack(GameMgr.GetInstance().Damage, Color.yellow);
+            GameMgr.GetInstance().Attack(GameMgr.GetInstance().Damage, Color.white);
         }
 
         else if(!_IsPress)

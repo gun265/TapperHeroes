@@ -8,11 +8,16 @@ public class Hero_Behavior : HeroFoundation
     public float Ori_AttackSpeed = 1.0f;
     public string Name = "";
     public GameObject AttackParticle = null;
+    Animation Ani = null;
 
     public override void Init()
     {
         CurrentAttackSpeed = Ori_AttackSpeed;
         CurrentDamage = Ori_Damage;
+        if( Ani == null)
+        {
+            Ani = GetComponent<Animation>();
+        }
     }
 
     public override void Awake()
@@ -27,6 +32,7 @@ public class Hero_Behavior : HeroFoundation
             if ((AttackTime += Time.deltaTime) >= CurrentAttackSpeed)
             {
                 AttackTime = 0;
+                PlayAttack();
                 Attack();
             }
         }
@@ -47,12 +53,23 @@ public class Hero_Behavior : HeroFoundation
         Vector3 pos = Camera.main.WorldToScreenPoint(transform.position);
         Temp.transform.position = UICam.ScreenToWorldPoint(new Vector3(pos.x, pos.y, 0));
 
-        GameMgr.GetInstance().AddAttackEffect(Temp);
-        GameMgr.GetInstance().Attack(CurrentDamage, Color.blue);
+        GameMgr.GetInstance().AddAttackList(gameObject, CurrentDamage, CurrentAttackSpeed, Temp);
     }
 
     public override void Regeneration()
     {
         
+    }
+
+    public override IEnumerable PlayAttack()
+    {
+        Ani.CrossFade("Lumbering", 0.5f);
+        yield return new WaitForSeconds(CurrentAttackSpeed);
+        PlayWait();
+    }
+
+    public override void PlayWait()
+    {
+        Ani.CrossFade("Idle", 0.5f);
     }
 }
