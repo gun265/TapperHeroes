@@ -10,7 +10,7 @@ public class DamageText : MonoBehaviour
     Camera UICam = null;
     Vector3 Target = Vector3.zero;
     
-    public void Init(uint _Damage, Vector3 _Target, Color _Color, int _FontSize = 40, float _UpSpeed = 0.5f)
+    public void Init(long _Damage, Vector3 _Target, Color _Color, int _FontSize = 40, float _UpSpeed = 0.5f)
     {
         Target = _Target;
         Label = GetComponent<UILabel>();

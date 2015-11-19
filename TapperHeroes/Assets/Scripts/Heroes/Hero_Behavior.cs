@@ -1,23 +1,54 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using System;
 
 public class Hero_Behavior : HeroFoundation
 {
-    public uint Ori_Damage = 1;
+    public long Ori_Damage = 1;
     public float Ori_AttackSpeed = 1.0f;
+    public float CriticalPercent = 10;
     public string Name = "";
     public GameObject AttackParticle = null;
-    Animation Ani = null;
+    public Animation Ani = null;
+    public Hero_StateMachine<Hero_Behavior> StateMachine = null;
+    public List<HeroSkillFoundation> SkillList = null;
 
     public override void Init()
     {
         CurrentAttackSpeed = Ori_AttackSpeed;
         CurrentDamage = Ori_Damage;
-        if( Ani == null)
+        if (Ani == null)
         {
             Ani = GetComponent<Animation>();
         }
+
+        if (StateMachine == null)
+        {
+            StateMachine = new Hero_StateMachine<Hero_Behavior>();
+            StateMachine.Init(this, new Hero_Live());
+        }
+
+        int index = 0;
+        foreach (HeroSkillFoundation _Skill in SkillList)
+        {
+            if (index < ActivateSkillNumber)
+            {
+                _Skill.IsActivate = true;
+                _Skill.ApplySkill(this);
+            }
+            else
+            {
+                _Skill.IsActivate = false;
+                _Skill.IsApply = false;
+            }
+            index++;
+        }
+    }
+
+    public void PlayIdleAnimation()
+    {
+        Ani.CrossFade("Idle",0.2f);
     }
 
     public override void Awake()
@@ -27,49 +58,17 @@ public class Hero_Behavior : HeroFoundation
 
     public override void Update()
     {
-        if( !IsDead)
-        {
-            if ((AttackTime += Time.deltaTime) >= CurrentAttackSpeed)
-            {
-                AttackTime = 0;
-                PlayAttack();
-                Attack();
-            }
+        CalculateCurrentState();
+        StateMachine.Update(Time.deltaTime);
+    }
+
+    public void CalculateCurrentState()
+    {
+        Damage = CurrentDamage + Buff_Damage  * (long)(HeroLevel);
+        AttackSpeed = CurrentAttackSpeed - Buff_AttackSpeed;
+        if (AttackSpeed < 0.5f)
+        {   
+            AttackSpeed = 0.5f;
         }
-        else
-        {
-            if ((CurrentRegenTime += Time.deltaTime) >= RegenTime)
-            {
-                CurrentRegenTime = 0;
-                Regeneration();
-            }
-        }
-    }
-
-    public override void Attack()
-    {
-        GameObject Temp = NGUITools.AddChild(GameMgr.GetInstance().Effect, AttackParticle);
-        Camera UICam = NGUITools.FindCameraForLayer(Temp.layer);
-        Vector3 pos = Camera.main.WorldToScreenPoint(transform.position);
-        Temp.transform.position = UICam.ScreenToWorldPoint(new Vector3(pos.x, pos.y, 0));
-
-        GameMgr.GetInstance().AddAttackList(gameObject, CurrentDamage, CurrentAttackSpeed, Temp);
-    }
-
-    public override void Regeneration()
-    {
-        
-    }
-
-    public override IEnumerable PlayAttack()
-    {
-        Ani.CrossFade("Lumbering", 0.5f);
-        yield return new WaitForSeconds(CurrentAttackSpeed);
-        PlayWait();
-    }
-
-    public override void PlayWait()
-    {
-        Ani.CrossFade("Idle", 0.5f);
     }
 }

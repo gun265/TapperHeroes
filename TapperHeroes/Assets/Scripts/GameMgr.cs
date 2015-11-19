@@ -28,12 +28,11 @@ public class GameMgr : MonoBehaviour
     public GameObject Effect = null;
     public GameObject Heroes = null;
     public List<GameObject> TextList = new List<GameObject>();
-    //public List<GameObject> EffectList = new List<GameObject>();
     public List<Dictionary<string, object>> AttackList = new List<Dictionary<string, object>>();
     public bool OnDebuging = false;
     public bool IsGamePlaying = true;    
     public uint WeaponLevel = 1;
-    public uint Damage = 1;
+    public long Damage = 1;
     public uint ActivatedHeroCount = 0;
     public float AttackTimer = 30.0f;
     public float CriticalPercent = 10;
@@ -131,9 +130,9 @@ public class GameMgr : MonoBehaviour
         IsGamePlaying = false;
     }
 
-    public void Attack(uint _Damage, Color _Color, GameObject _Owner = null)
+    public void Attack(long _Damage, Color _Color, GameObject _Owner = null)
     {
-        uint CurrntDamage = _Damage + (uint)DamageRand;
+        long CurrntDamage = _Damage + (long)DamageRand;
         bool IsCritical = false;
         if(_Owner == null && Random.Range(0.0f, 100.0f) <= CriticalPercent)
         {
@@ -143,7 +142,7 @@ public class GameMgr : MonoBehaviour
         DamagePrint(CurrntDamage, IsCritical, _Color);
     }
 
-    void DamagePrint(uint _Damage, bool _IsCritical, Color _Color)
+    void DamagePrint(long _Damage, bool _IsCritical, Color _Color)
     {
         int FontSize = 40;
         float UpSpeed = 0.5f;
@@ -174,7 +173,7 @@ public class GameMgr : MonoBehaviour
         CurrentTimer = AttackTimer;
     }
     
-    public void AddAttackList(GameObject _Owner, uint _Damage, float _AttackSpeed, GameObject _AttackEffect)
+    public void AddAttackList(GameObject _Owner, long _Damage, float _AttackSpeed, GameObject _AttackEffect)
     {
         Dictionary<string, object> Element = new Dictionary<string, object>();
         Element.Add("Owner", _Owner);
@@ -200,7 +199,7 @@ public class GameMgr : MonoBehaviour
             GameObject EffectObject = AttackList[i]["AttackEffect"] as GameObject;
             Vector3 EffectPos = EffectObject.transform.position;
             float AttackSpeed = (float)AttackList[i]["AttackSpeed"];
-            uint AttackDamage = (uint)AttackList[i]["Damage"];
+            long AttackDamage = (long)AttackList[i]["Damage"];
 
             if (Vector3.SqrMagnitude(MonsterUIPosition - EffectPos) >= 0.0001f)
             {
